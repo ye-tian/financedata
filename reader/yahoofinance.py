@@ -133,6 +133,7 @@ class YahooFinance(object):
     # type 2:
     # from a='01', b='10', c='2010',
     # to d='01', e='20', f='2010'
+    # without specifying from and/or to date, it will return the entire dateset. Be careful when you print it!
     def call(self,**kwargs):
         if len(kwargs) != 0:
             self.params = kwargs
